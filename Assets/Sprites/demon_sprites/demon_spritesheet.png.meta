@@ -12,6 +12,7 @@ TextureImporter:
     21300010: demon_spritesheet_5
     21300012: demon_spritesheet_6
     21300014: demon_spritesheet_7
+    21300016: demon_spritesheet_8
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -211,6 +212,20 @@ TextureImporter:
         serializedVersion: 2
         x: 96
         y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: demon_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
