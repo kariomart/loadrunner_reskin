@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
+	public GameObject heartPop;
+
 	public const float TILE_SIZE = 1f;
 
 	public float walkSpeed = 1f;
@@ -228,6 +230,11 @@ public class PlayerMovement : MonoBehaviour {
 		if (_horizontalVelocity != 0) {
 			_slideDirection = Mathf.Sign(_horizontalVelocity);
 		}
+	}
+
+	public void playParticleFX(GameObject g, Vector2 pos) {
+		Instantiate(g, pos, Quaternion.identity);
+
 	}
 
 

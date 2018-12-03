@@ -16,7 +16,17 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 0}
+      propertyPath: heartPop
+      value: 
+      objectReference: {fileID: 1992529584835774, guid: 90edd5981c8024f9288e69103d927075,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1997730891597012}
   m_IsPrefabParent: 0
@@ -554,6 +564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01300aa3c8bb44b099b36f50dab86ff9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heartPop: {fileID: 1992529584835774, guid: 90edd5981c8024f9288e69103d927075, type: 2}
   walkSpeed: 5
   fallSpeed: 5
   feetHitbox: {fileID: 114226749540805534}
@@ -682,7 +693,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300014, guid: d3518860af2054cf3be1039143bb571e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

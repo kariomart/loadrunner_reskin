@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour {
 		else if (currentState == GameState.Running) {
 			if (_mainPlayer.bodyHitbox.isTouchingAny("Coin")) {
 				coinsCollected++; 
+				_mainPlayer.playParticleFX(_mainPlayer.heartPop, _mainPlayer.bodyHitbox.getColliderWereTouching("Coin").gameObject.transform.position);
 				Destroy(_mainPlayer.bodyHitbox.getColliderWereTouching("Coin").gameObject);
 				// If that was the last coin, reveal the exit. 
 				if (coinsCollected >= totalCoinsInLevel && _exitObj != null) {
