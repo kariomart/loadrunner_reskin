@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
 	public GameObject heartPop;
+	public GameObject pop; 
 
 	public const float TILE_SIZE = 1f;
 

@@ -25,6 +25,16 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: slideFX
+      value: 
+      objectReference: {fileID: 114004055963545460, guid: f152a38efa83a46beb954cd43a56da27,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: pop
+      value: 
+      objectReference: {fileID: 1255525015646946, guid: f152a38efa83a46beb954cd43a56da27,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 0}
@@ -565,6 +575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heartPop: {fileID: 1992529584835774, guid: 90edd5981c8024f9288e69103d927075, type: 2}
+  pop: {fileID: 1255525015646946, guid: f152a38efa83a46beb954cd43a56da27, type: 2}
   walkSpeed: 5
   fallSpeed: 5
   feetHitbox: {fileID: 114226749540805534}
@@ -600,6 +611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slideCooldownFlashPeriod: 0.033333335
+  slideFX: {fileID: 114004055963545460, guid: f152a38efa83a46beb954cd43a56da27, type: 2}
 --- !u!114 &114773668650542998
 MonoBehaviour:
   m_ObjectHideFlags: 1

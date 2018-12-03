@@ -13,6 +13,8 @@ public class PlayerAnimation : MonoBehaviour {
 	public float slideCooldownFlashPeriod = 0.1f;
 	private float _slideCooldownFlashFrequency;
 
+	public lodeFX slideFX;
+
 	// Use this for initialization
 	void Start () {
 		_anim = GetComponent<Animator>();
@@ -43,6 +45,7 @@ public class PlayerAnimation : MonoBehaviour {
 		_anim.SetBool("Dead", _movement.dead);
 		if (_movement.sliding && !_wasSliding) {
 			_anim.SetTrigger("BeginSlide");
+			SpawnFX(slideFX);
 		}
 		_wasSliding = _movement.sliding;
 
@@ -61,5 +64,14 @@ public class PlayerAnimation : MonoBehaviour {
 		else {
 			_spriteRenderer.enabled = true;
 		}
+	}
+
+	void SpawnFX(lodeFX fx) {
+
+		if (fx) {
+			GameObject newFX = Instantiate(fx, transform.position, Quaternion.identity).gameObject;
+			newFX.GetComponent<SpriteRenderer>().flipX = _spriteRenderer.flipX;	
+		}
+
 	}
 }

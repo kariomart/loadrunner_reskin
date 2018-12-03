@@ -70,6 +70,7 @@ public class GameManager : MonoBehaviour {
 			else if (_mainPlayer.bodyHitbox.isTouchingAny("Enemy")) {
 				// Game Over.
 				// Do a camera shake
+        		StartCoroutine(deathAnimation(_mainPlayer.bodyHitbox.getColliderWereTouching("Enemy").gameObject.transform.position));
 				Camera.main.GetComponent<ObjShake>().shake();
 				currentState = GameState.GameOver;
 				_mainPlayer.dead = true;
@@ -104,5 +105,12 @@ public class GameManager : MonoBehaviour {
 				}
 			}
 		}
+	}
+
+	public IEnumerator deathAnimation(Vector2 pos) {
+
+		_mainPlayer.playParticleFX(_mainPlayer.pop, pos);
+		yield return new WaitForSeconds(5);
+
 	}
 }

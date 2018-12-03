@@ -8,6 +8,7 @@ public class TiledLevelLoader : MonoBehaviour {
 	public TextAsset tiledFile;
 
 	public GameObject[] tilePrefabs;
+    public GameObject torch;
 
 	void Start() {
 		if (tiledFile != null) {
@@ -37,6 +38,12 @@ public class TiledLevelLoader : MonoBehaviour {
                 if (tileIndex > 0)
                 {
                     GameObject spawnedObj = Instantiate(tilePrefabs[tileIndex - 1]);
+                    if (tileIndex == 1) {
+                        if (Random.Range(0, 10) == 1) {
+                            GameObject t = Instantiate(torch);
+                            t.transform.position = new Vector3(PlayerMovement.TILE_SIZE * x + xOffset, PlayerMovement.TILE_SIZE * y + yOffset, -5f);
+                        }
+                    }
                     spawnedObj.transform.parent = transform;
                     spawnedObj.transform.position = new Vector3(PlayerMovement.TILE_SIZE * x + xOffset, PlayerMovement.TILE_SIZE * y + yOffset);
                 }

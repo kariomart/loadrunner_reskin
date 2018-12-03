@@ -8,7 +8,11 @@ public class lodeFX : MonoBehaviour {
 
 	public void Start(){
 
-		Destroy(gameObject, lifetime);
+		//Destroy(gameObject, lifetime);
 
+	}
+
+	public void DestroyMe() {
+		Destroy(this.gameObject);
 	}
 }
