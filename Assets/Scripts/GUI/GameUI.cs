@@ -22,12 +22,13 @@ public class GameUI : MonoBehaviour {
 	public string allLevelsCompleteString = "Game Complete!\n<size=32>Press Enter or Escape to quit.</size>";
 
 	[TextArea(3, 60)]
-	public string coinsString = "Coins: {0}/{1}";
+	public string coinsString = "HEARTS: {0}/{1}";
 
 	[TextArea(3, 60)]
 	public string allCoinsCollectedString = " (go to the exit!)";
 
 	void Update () {
+		
 		if (GameManager.instance.currentState == GameManager.GameState.Starting) {
 			bigUIText.text = string.Format(startLevelString, GameManager.currentLevelIndex+1);
 		}

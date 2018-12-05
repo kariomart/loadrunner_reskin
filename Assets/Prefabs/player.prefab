@@ -35,6 +35,14 @@ Prefab:
       value: 
       objectReference: {fileID: 1255525015646946, guid: f152a38efa83a46beb954cd43a56da27,
         type: 2}
+    - target: {fileID: 0}
+      propertyPath: heartSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: b98bc52a25e744c149d108c5aa11d2cf, type: 3}
+    - target: {fileID: 0}
+      propertyPath: slideSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: d1bde56bd3ef74c019be3b4923027f1e, type: 3}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 0}
@@ -576,6 +584,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartPop: {fileID: 1992529584835774, guid: 90edd5981c8024f9288e69103d927075, type: 2}
   pop: {fileID: 1255525015646946, guid: f152a38efa83a46beb954cd43a56da27, type: 2}
+  slideSFX: {fileID: 8300000, guid: d1bde56bd3ef74c019be3b4923027f1e, type: 3}
+  heartSFX: {fileID: 8300000, guid: b98bc52a25e744c149d108c5aa11d2cf, type: 3}
   walkSpeed: 5
   fallSpeed: 5
   feetHitbox: {fileID: 114226749540805534}

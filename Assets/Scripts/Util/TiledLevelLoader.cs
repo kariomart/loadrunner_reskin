@@ -44,6 +44,11 @@ public class TiledLevelLoader : MonoBehaviour {
                             t.transform.position = new Vector3(PlayerMovement.TILE_SIZE * x + xOffset, PlayerMovement.TILE_SIZE * y + yOffset, -5f);
                         }
                     }
+
+                    if (tileIndex == 4) {
+                        Camera.main.gameObject.GetComponent<CameraController>().targetObject = spawnedObj.transform;    
+                    }
+
                     spawnedObj.transform.parent = transform;
                     spawnedObj.transform.position = new Vector3(PlayerMovement.TILE_SIZE * x + xOffset, PlayerMovement.TILE_SIZE * y + yOffset);
                 }

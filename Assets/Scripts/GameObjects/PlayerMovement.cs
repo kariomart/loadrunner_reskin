@@ -7,6 +7,9 @@ public class PlayerMovement : MonoBehaviour {
 	public GameObject heartPop;
 	public GameObject pop; 
 
+	public AudioClip slideSFX;
+	public AudioClip heartSFX;
+
 	public const float TILE_SIZE = 1f;
 
 	public float walkSpeed = 1f;
@@ -220,6 +223,7 @@ public class PlayerMovement : MonoBehaviour {
 		 && _slideCooldownTimer <= 0
 		 &&_controller.beginSlide()) {
 			_sliding = true;
+			SoundController.me.PlaySound(slideSFX, 1f);
 			_slideTimer = slideTime;
 			_slideCooldownTimer = slideCooldownTime;
 		}

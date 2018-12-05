@@ -69,7 +69,7 @@ public class PlayerAnimation : MonoBehaviour {
 	void SpawnFX(lodeFX fx) {
 
 		if (fx) {
-			GameObject newFX = Instantiate(fx, transform.position, Quaternion.identity).gameObject;
+			GameObject newFX = Instantiate(fx, transform.position + Vector3.down * .5f, Quaternion.identity).gameObject;
 			newFX.GetComponent<SpriteRenderer>().flipX = _spriteRenderer.flipX;	
 		}
 

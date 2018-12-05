@@ -37,8 +37,8 @@ public class GameManager : MonoBehaviour {
 		TextAsset currentLevelFile = allLevels[currentLevelIndex];
 		levelLoader.loadLevel(currentLevelFile.text);
 		_mainPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-        Camera.main.transform.parent = _mainPlayer.transform;
-        Camera.main.transform.localPosition = new Vector3(0, 0, -10);
+        //Camera.main.transform.parent = _mainPlayer.transform;
+        //Camera.main.transform.localPosition = new Vector3(0, 0, -10);
 		_exitObj = GameObject.FindGameObjectWithTag("Exit");
 		if (_exitObj != null) {
 			_exitObj.SetActive(false);
@@ -61,6 +61,7 @@ public class GameManager : MonoBehaviour {
 			if (_mainPlayer.bodyHitbox.isTouchingAny("Coin")) {
 				coinsCollected++; 
 				_mainPlayer.playParticleFX(_mainPlayer.heartPop, _mainPlayer.bodyHitbox.getColliderWereTouching("Coin").gameObject.transform.position);
+				SoundController.me.PlaySound(_mainPlayer.heartSFX, 1f);
 				Destroy(_mainPlayer.bodyHitbox.getColliderWereTouching("Coin").gameObject);
 				// If that was the last coin, reveal the exit. 
 				if (coinsCollected >= totalCoinsInLevel && _exitObj != null) {
@@ -70,7 +71,7 @@ public class GameManager : MonoBehaviour {
 			else if (_mainPlayer.bodyHitbox.isTouchingAny("Enemy")) {
 				// Game Over.
 				// Do a camera shake
-        		StartCoroutine(deathAnimation(_mainPlayer.bodyHitbox.getColliderWereTouching("Enemy").gameObject.transform.position));
+				_mainPlayer.playParticleFX(_mainPlayer.pop, _mainPlayer.transform.position);
 				Camera.main.GetComponent<ObjShake>().shake();
 				currentState = GameState.GameOver;
 				_mainPlayer.dead = true;
@@ -105,12 +106,5 @@ public class GameManager : MonoBehaviour {
 				}
 			}
 		}
-	}
-
-	public IEnumerator deathAnimation(Vector2 pos) {
-
-		_mainPlayer.playParticleFX(_mainPlayer.pop, pos);
-		yield return new WaitForSeconds(5);
-
 	}
 }
