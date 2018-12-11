@@ -20,6 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4488451075184678}
   - component: {fileID: 212918759796218984}
+  - component: {fileID: 114237943272401294}
+  - component: {fileID: 114287898502993242}
   m_Layer: 0
   m_Name: bg1
   m_TagString: Untagged
@@ -40,6 +42,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114237943272401294
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1181638266999602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4687505a053fd447484d3cc9bd808501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114287898502993242
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1181638266999602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2bc667d53c8149088612b961685cf17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultTile: {fileID: 21300002, guid: c6cd8c882fc6243db80f55d626400acb, type: 3}
+  defaultWeight: 0.75
+  randTiles:
+  - {fileID: 21300056, guid: d3518860af2054cf3be1039143bb571e, type: 3}
+  - {fileID: 21300002, guid: c6cd8c882fc6243db80f55d626400acb, type: 3}
+  - {fileID: 21300004, guid: c6cd8c882fc6243db80f55d626400acb, type: 3}
+  - {fileID: 21300026, guid: d3518860af2054cf3be1039143bb571e, type: 3}
+  - {fileID: 21300008, guid: c6cd8c882fc6243db80f55d626400acb, type: 3}
 --- !u!212 &212918759796218984
 SpriteRenderer:
   m_ObjectHideFlags: 1

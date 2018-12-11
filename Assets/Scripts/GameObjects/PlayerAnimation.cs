@@ -45,7 +45,7 @@ public class PlayerAnimation : MonoBehaviour {
 		_anim.SetBool("Dead", _movement.dead);
 		if (_movement.sliding && !_wasSliding) {
 			_anim.SetTrigger("BeginSlide");
-			SpawnFX(slideFX);
+			//SpawnFX(slideFX);
 		}
 		_wasSliding = _movement.sliding;
 

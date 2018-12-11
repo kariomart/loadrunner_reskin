@@ -16,6 +16,8 @@ public class HeartTitleController : MonoBehaviour {
 	public GameObject buttons;
 	public GameObject audioSourcePrefab;
 	public SpriteRenderer sprite;
+	public GameObject flashlight;
+	public GameObject titleText;
 	
 
 	MainMenuScene menu;
@@ -101,6 +103,8 @@ public class HeartTitleController : MonoBehaviour {
 
 		}
 
+		flashlight.SetActive(true);
+		titleText.SetActive(true);
 
 	}
 }
