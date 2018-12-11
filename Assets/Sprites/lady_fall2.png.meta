@@ -1,17 +1,12 @@
 fileFormatVersion: 2
-guid: 904ce132b363f4918bc4ac36d65bfccc
-timeCreated: 1543842054
+guid: e0757991b552e4e138dc9038ed05dc93
+timeCreated: 1544460648
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: slide_sprite_0
-    21300002: slide_sprite_1
-    21300004: slide_sprite_2
-    21300006: slide_sprite_3
-    21300008: slide_sprite_4
-    21300010: slide_sprite_5
-    21300012: slide_sprite_6
-    21300014: slide_sprite_7
+    21300000: lady_fall2_0
+    21300002: lady_fall2_1
+    21300004: lady_fall2_2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -98,7 +93,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: slide_sprite_0
+      name: lady_fall2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,7 +107,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: slide_sprite_1
+      name: lady_fall2_1
       rect:
         serializedVersion: 2
         x: 32
@@ -126,80 +121,10 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: slide_sprite_2
+      name: lady_fall2_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: slide_sprite_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: slide_sprite_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: slide_sprite_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: slide_sprite_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: slide_sprite_7
-      rect:
-        serializedVersion: 2
-        x: 224
         y: 0
         width: 32
         height: 32

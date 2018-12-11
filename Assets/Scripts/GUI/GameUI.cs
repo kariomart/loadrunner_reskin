@@ -22,7 +22,7 @@ public class GameUI : MonoBehaviour {
 	public string allLevelsCompleteString = "Game Complete!\n<size=32>Press Enter or Escape to quit.</size>";
 
 	[TextArea(3, 60)]
-	public string coinsString = "HEARTS: {0}/{1}";
+	public string coinsString = "hearts: {0}/{1}";
 
 	[TextArea(3, 60)]
 	public string allCoinsCollectedString = " (go to the exit!)";

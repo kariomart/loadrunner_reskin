@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: b2038d2824ae34853bbe22c83544ea2c
+timeCreated: 1544449455
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: From_the_Dead
+  fontNames:
+  - From_the_Dead
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

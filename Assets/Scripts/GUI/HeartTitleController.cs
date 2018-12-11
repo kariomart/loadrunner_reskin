@@ -11,6 +11,12 @@ public class HeartTitleController : MonoBehaviour {
 	int counter;
 	AudioSource beatSFX;
 	public AudioClip beatSound;
+	public AudioClip splat;
+	public ParticleSystem splatFX;
+	public GameObject buttons;
+	public GameObject audioSourcePrefab;
+	public SpriteRenderer sprite;
+	
 
 	MainMenuScene menu;
 
@@ -18,6 +24,7 @@ public class HeartTitleController : MonoBehaviour {
 	void Start () {
 
 		anim = GetComponent<Animation>();
+		sprite = GetComponent<SpriteRenderer>();
 		startPos = transform.position;
 		startScale = transform.localScale;
 		beatSFX = GetComponent<AudioSource>();
@@ -38,6 +45,7 @@ public class HeartTitleController : MonoBehaviour {
 	void OnMouseOver() {
 
 		mouseOver = true;
+		transform.position = startPos;
 		anim.Stop();
 		Shake();
 
@@ -46,13 +54,20 @@ public class HeartTitleController : MonoBehaviour {
 	void OnMouseExit() {
 
 		mouseOver = false;
+		transform.position = startPos;
 		anim.Play();
 		//transform.localScale = startScale;
 	}
 
 	void OnMouseDown() {
 
-		menu.levelButtonPressed(0);
+		EnableButtons();
+		Instantiate(splatFX, transform.position, Quaternion.identity);
+		AudioSource a = Instantiate(audioSourcePrefab).GetComponent<AudioSource>();
+		a.clip = splat;
+		a.Play();
+		Destroy(gameObject);
+		
 	}
 
 	void Shake() {
@@ -75,6 +90,17 @@ public class HeartTitleController : MonoBehaviour {
 
 		beatSFX.clip = beatSound;
 		beatSFX.Play();
+
+	}
+
+	void EnableButtons() {
+
+		foreach(Transform child in buttons.transform) {
+
+			child.gameObject.SetActive(true);
+
+		}
+
 
 	}
 }
