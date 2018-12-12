@@ -45,9 +45,9 @@ public class PlayerAnimation : MonoBehaviour {
 		_anim.SetBool("Dead", _movement.dead);
 		if (_movement.sliding && !_wasSliding) {
 			_anim.SetTrigger("BeginSlide");
-			//SpawnFX(slideFX);
+				//SpawnFX(slideFX);
 		}
-		_wasSliding = _movement.sliding;
+
 
 
 		if (_movement.horizontalVelocity < 0) {
@@ -66,7 +66,7 @@ public class PlayerAnimation : MonoBehaviour {
 		}
 	}
 
-	void SpawnFX(lodeFX fx) {
+	public void SpawnFX(lodeFX fx) {
 
 		if (fx) {
 			GameObject newFX = Instantiate(fx, transform.position + Vector3.down * .5f, Quaternion.identity).gameObject;

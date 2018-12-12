@@ -889,6 +889,8 @@ MonoBehaviour:
   allLevels:
   - {fileID: 4900000, guid: fccb30dd431924ff59612852f7a29dc2, type: 3}
   - {fileID: 4900000, guid: efbf0952427704bd8bad655f11725376, type: 3}
+  - {fileID: 4900000, guid: c202bcc4eaf644090a090c5b54dc23c3, type: 3}
+  - {fileID: 4900000, guid: fccb30dd431924ff59612852f7a29dc2, type: 3}
   levelLoader: {fileID: 1571246953}
   coinsCollected: 0
   totalCoinsInLevel: 0

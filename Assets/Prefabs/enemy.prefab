@@ -18,7 +18,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: walkSpeed
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_SortingOrder
@@ -622,6 +622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slideCooldownFlashPeriod: 0.1
+  slideFX: {fileID: 0}
 --- !u!114 &114697659738112800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -634,7 +635,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heartPop: {fileID: 0}
-  walkSpeed: 0.5
+  pop: {fileID: 0}
+  slideSFX: {fileID: 0}
+  heartSFX: {fileID: 0}
+  walkSpeed: 1
   fallSpeed: 5
   feetHitbox: {fileID: 114348991116485224}
   upperBodyHitbox: {fileID: 114043582706433710}

@@ -42,6 +42,7 @@ public class flashlight : MonoBehaviour {
 			moving = true;
 			transform.eulerAngles = new Vector3(0,0,90);
 			transform.position = new Vector2(-4.14f, -4.26f);
+			desiredPos = new Vector2(-4.14f, -4.26f);
 			counter ++;
 		}
 		
